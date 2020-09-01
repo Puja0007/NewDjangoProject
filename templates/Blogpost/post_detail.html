@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3 id="h_id">{{object.title}}</h3><br>
+<p id="btext">{{object.description}}</p><br><br>
+<button type="button" class="btn btn-success" onclick="onClick()">Like</button>
+<p id="like">{{object.likes}}</p>
+Published on {{object.timestamp}}
+<input type="hidden" id="likes_id" name="name" value="{{object.id}}"> 
+{% endblock %}
